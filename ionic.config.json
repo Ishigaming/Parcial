@@ -1,0 +1,7 @@
+{
+  "name": "paarcial",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

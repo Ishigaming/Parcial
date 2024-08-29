@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Product Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card *ngIf="prod">
+    <ion-card-header>
+      <img [src]="prod.image" alt="{{ prod.title }}" />
+      <ion-card-subtitle>{{ prod.title }}</ion-card-subtitle>
+      <ion-card-title>{{ prod.id }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>Category: {{ prod.category }}</p>
+      <p>Price: {{ prod.price | currency }}</p>
+      <p>Description: {{ prod.description }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
